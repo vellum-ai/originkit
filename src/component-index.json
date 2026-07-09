@@ -1,0 +1,1021 @@
+{
+  "count": 50,
+  "components": [
+    {
+      "name": "blackhole",
+      "displayName": "Black Hole",
+      "category": "interactive-elements",
+      "description": "Render a physically convincing 3D black hole with orbiting particles, depth-sorted occlusion, gravity inflow, and a glowing event-horizon core.",
+      "tags": [
+        "3d",
+        "particles",
+        "canvas",
+        "physics",
+        "animation"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "juiceeffect",
+      "displayName": "Juice Effect",
+      "category": "interactive-elements",
+      "description": "Fill an image silhouette with gooey, rising-and-falling liquid particles that fuse into organic blobs and scatter from the cursor.",
+      "tags": [
+        "canvas",
+        "particles",
+        "liquid",
+        "image",
+        "hover",
+        "svg",
+        "goo"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "spiralimages",
+      "displayName": "Spiral Images",
+      "category": "image-gallery",
+      "description": "Images flow along an Archimedean spiral vortex from the edge into the center, rotating to follow the tangent and fading at both ends.",
+      "tags": [
+        "image",
+        "gallery",
+        "spiral",
+        "rotation",
+        "animation"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "svgparticles",
+      "displayName": "SVG Particle",
+      "category": "interactive-elements",
+      "description": "Transform images/SVGs into interactive particle animations with hover and repulsion effects.",
+      "tags": [
+        "particle image",
+        "particle effect",
+        "image animation",
+        "interactive",
+        "hover effect",
+        "repulsion",
+        "cursor effect",
+        "particles"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "fluidtrail",
+      "displayName": "Fluid Trail",
+      "category": "interactive-elements",
+      "description": "Paint a glowing, GPU-simulated fluid trail that swirls and drifts behind the cursor with real Navier-Stokes physics.",
+      "tags": [
+        "webgl",
+        "fluid",
+        "canvas",
+        "simulation",
+        "cursor",
+        "physics",
+        "interactive",
+        "trail"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "weight-hover",
+      "displayName": "Weight Hover",
+      "category": "text",
+      "description": "Morph each letter's variable-font weight on hover, staggered letter-by-letter with a spring that eases in and out.",
+      "tags": [
+        "text",
+        "hover",
+        "variable font",
+        "typography",
+        "stagger",
+        "animation",
+        "weight"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ]
+    },
+    {
+      "name": "smokytext",
+      "displayName": "Smoky Text",
+      "category": "text",
+      "description": "Animate text with realistic smoke diffusion, customizable reveal directions, trigger modes, and smooth character-based transitions.",
+      "tags": [
+        "text animation",
+        "smoke effect",
+        "typography",
+        "text reveal",
+        "particle text",
+        "motion",
+        "interactive text"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "infinitegallery",
+      "displayName": "Infinity Canvas",
+      "category": "image-gallery",
+      "description": "An infinitely zoomable and draggable image gallery with smooth motion, momentum, and immersive navigation.",
+      "tags": [
+        "gallery",
+        "infinite",
+        "zoom",
+        "draggable",
+        "image-grid",
+        "portfolio",
+        "showcase",
+        "motion",
+        "interactive",
+        "canvas",
+        "photos"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ]
+    },
+    {
+      "name": "pixelreveal",
+      "displayName": "Pixel Reveal",
+      "category": "animation",
+      "description": "Dissolve a grid of colored pixel squares to reveal an image, sweeping up, down, left, or right with a ragged, noisy leading edge.",
+      "tags": [
+        "image",
+        "canvas",
+        "reveal",
+        "dissolve",
+        "pixel",
+        "animation",
+        "scroll"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "inkbleed",
+      "displayName": "Inkbleed",
+      "category": "text",
+      "description": "Create interactive ink bleed effects that react fluidly to cursor movement.",
+      "tags": [
+        "text effect",
+        "ink bleed",
+        "liquid text",
+        "cursor interaction",
+        "typography",
+        "hover effect",
+        "interactive"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "glitterwrap",
+      "displayName": "Glitter Wrap",
+      "category": "animation",
+      "description": "Send a glittering starfield of particles warping outward or inward from center, with random sparkle flashes and motion streaks.",
+      "tags": [
+        "canvas",
+        "starfield",
+        "particles",
+        "warp",
+        "animation",
+        "sparkle",
+        "hyperspace"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "risinglines",
+      "displayName": "Rising Lines",
+      "category": "animation",
+      "description": "Emit two layers of glowing particles — thin line sparks and soft blobs — rising or falling from a luminous horizon on canvas.",
+      "tags": [
+        "canvas",
+        "particles",
+        "animation",
+        "glow",
+        "horizon",
+        "light",
+        "generative"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "particlesphere",
+      "displayName": "Particle Sphere",
+      "category": "interactive-elements",
+      "description": "Spin an interactive 3D sphere of thousands of glowing particles that scatter away from your cursor and clicks.",
+      "tags": [
+        "3d",
+        "particles",
+        "webgl",
+        "sphere",
+        "interactive",
+        "rotation",
+        "physics",
+        "cursor"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "pixelcard",
+      "displayName": "Pixel Card",
+      "category": "background-animation",
+      "description": "Fill a card with a shimmering canvas grid of pixels that grow in from the center or any edge on hover, scroll, or automatically.",
+      "tags": [
+        "canvas",
+        "pixels",
+        "grid",
+        "shimmer",
+        "animation",
+        "hover",
+        "scroll-reveal",
+        "background"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "kineticgrid",
+      "displayName": "Kinetic Grid",
+      "category": "interactive-elements",
+      "description": "An interactive grid background that dynamically reacts to cursor movement with smooth attraction, animated mesh lines, and an optional cursor trail.",
+      "tags": [
+        "background",
+        "grid",
+        "kinetic",
+        "interactive",
+        "cursor",
+        "mouse",
+        "mesh",
+        "dots",
+        "canvas",
+        "motion",
+        "animation"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "typewriter",
+      "displayName": "Type Writer",
+      "category": "text",
+      "description": "Types out a rotating list of phrases one character at a time with a blinking cursor and a static, separately colored prefix.",
+      "tags": [
+        "text",
+        "typewriter",
+        "typing",
+        "cursor",
+        "animation",
+        "loop"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ]
+    },
+    {
+      "name": "random-letter-swap",
+      "displayName": "Random Letter Swap",
+      "category": "text",
+      "description": "Swap each letter of a heading vertically on hover, revealing a duplicate glyph in a randomized, staggered order.",
+      "tags": [
+        "text",
+        "hover",
+        "animation",
+        "typography",
+        "stagger",
+        "letters",
+        "framer-motion"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ]
+    },
+    {
+      "name": "spinimage",
+      "displayName": "Spin Image",
+      "category": "image-gallery",
+      "description": "Orbit a set of images along a tilted 3D ellipse with continuous spin, depth-based scaling, and front-to-back layering.",
+      "tags": [
+        "image",
+        "gallery",
+        "orbit",
+        "3d",
+        "rotation",
+        "animation",
+        "carousel",
+        "css"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "textmorph",
+      "displayName": "Text Morph",
+      "category": "text",
+      "description": "Cycle through a word list with a gooey blur-and-scale morph that melts each word smoothly into the next.",
+      "tags": [
+        "text",
+        "morph",
+        "blur",
+        "animation",
+        "svg",
+        "css",
+        "typography"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "draggable-grid",
+      "displayName": "Draggable Grid",
+      "category": "image-gallery",
+      "description": "An infinitely draggable image canvas with smooth momentum, responsive layouts, and seamless gallery exploration.",
+      "tags": [
+        "infinite",
+        "canvas",
+        "gallery",
+        "draggable",
+        "image-grid",
+        "portfolio",
+        "showcase",
+        "momentum",
+        "interactive",
+        "masonry",
+        "photos"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ]
+    },
+    {
+      "name": "usercursor",
+      "displayName": "User Cursor",
+      "category": "interactive-elements",
+      "description": "Replace the native pointer inside any surface with a spring-tracked arrow and a trailing name pill that rocks with cursor speed.",
+      "tags": [
+        "cursor",
+        "pointer",
+        "follower",
+        "spring",
+        "physics",
+        "interactive",
+        "label",
+        "animation"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ]
+    },
+    {
+      "name": "boxcarousel",
+      "displayName": "Box Carousel",
+      "category": "image-gallery",
+      "description": "Rotate images and videos across the four faces of a 3D cube, driven by autoplay, drag, or arrow keys.",
+      "tags": [
+        "3d",
+        "cube",
+        "carousel",
+        "css",
+        "drag",
+        "autoplay",
+        "video",
+        "gallery"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ]
+    },
+    {
+      "name": "pixeldrift",
+      "displayName": "Pixel Drift",
+      "category": "interactive-elements",
+      "description": "Interactive particle typography that assembles, disperses, and reacts to cursor movement with smooth physics-based animations.",
+      "tags": [
+        "particle",
+        "text",
+        "typography",
+        "interactive",
+        "cursor",
+        "hover",
+        "animation",
+        "motion",
+        "canvas",
+        "kinetic",
+        "hero"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "spotlighttext",
+      "displayName": "Spotlight Text",
+      "category": "text",
+      "description": "Dim a block of text and sweep a soft cursor-following spotlight across it to reveal the bright letters underneath on hover.",
+      "tags": [
+        "text",
+        "spotlight",
+        "hover",
+        "mask",
+        "reveal",
+        "cursor",
+        "animation"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ]
+    },
+    {
+      "name": "coverflowgallery",
+      "displayName": "Coverflow Gallery",
+      "category": "image-gallery",
+      "description": "A smooth 3D coverflow carousel with perspective animations, autoplay, and fully customizable titles.",
+      "tags": [
+        "coverflow",
+        "carousel",
+        "3d",
+        "slider",
+        "gallery",
+        "cards",
+        "perspective",
+        "autoplay",
+        "showcase",
+        "image-slider",
+        "motion"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "coverflowcarousel",
+      "displayName": "Coverflow Carousel",
+      "category": "image-gallery",
+      "description": "Glide through an infinite cover-flow reel where the centered image grows into a landscape hero while its neighbors fold into thin slats.",
+      "tags": [
+        "image",
+        "carousel",
+        "coverflow",
+        "gallery",
+        "animation",
+        "autoplay",
+        "infinite loop"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ]
+    },
+    {
+      "name": "swipe-stack",
+      "displayName": "Swipe Stack",
+      "category": "image-gallery",
+      "description": "Flick through a fanned 3D stack of image cards that tilt, scale, and cycle to the back on every swipe.",
+      "tags": [
+        "image",
+        "cards",
+        "swipe",
+        "drag",
+        "3d",
+        "stack",
+        "gallery",
+        "animation"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ]
+    },
+    {
+      "name": "scrambletext",
+      "displayName": "Scramble Text",
+      "category": "text",
+      "description": "Animate text with cinematic glitch reveals and interactive character-based hover effects.",
+      "tags": [
+        "text animation",
+        "glitch",
+        "character reveal",
+        "hover effect",
+        "typography"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "emojiburst",
+      "displayName": "Emoji Burst",
+      "category": "button",
+      "description": "Launch a burst of custom emojis from a tappable button, flying off freely under gravity with a springy shake on each press.",
+      "tags": [
+        "emoji",
+        "button",
+        "particles",
+        "physics",
+        "animation",
+        "interactive",
+        "confetti",
+        "gravity"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "snowfall",
+      "displayName": "Snow Fall",
+      "category": "background-animation",
+      "description": "Fill any frame with drifting canvas snow, tuning per-flake size, speed, opacity, wind sway, and fall direction.",
+      "tags": [
+        "snow",
+        "canvas",
+        "particles",
+        "background",
+        "animation",
+        "weather",
+        "winter"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "sticker-peel",
+      "displayName": "Sticker Peel",
+      "category": "interactive-elements",
+      "description": "Peel and curl a 3D image sticker away from the surface on hover and press, with realistic bone-driven folding and soft shadows.",
+      "tags": [
+        "3d",
+        "webgl",
+        "image",
+        "sticker",
+        "peel",
+        "hover",
+        "animation",
+        "shadow"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ]
+    },
+    {
+      "name": "blinkingsquares",
+      "displayName": "Blinking Squares",
+      "category": "background-animation",
+      "description": "Fill any background with a grid of independently twinkling squares, shaped by a directional density fade and a cursor-following halo.",
+      "tags": [
+        "canvas",
+        "grid",
+        "squares",
+        "twinkle",
+        "background",
+        "animation",
+        "cursor"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "directionhover",
+      "displayName": "Direction Hover",
+      "category": "text",
+      "description": "Swap text to an accent-colored copy that slides in from the top or bottom edge the cursor enters, then out again on leave.",
+      "tags": [
+        "text",
+        "hover",
+        "direction-aware",
+        "slide",
+        "animation",
+        "css",
+        "typography"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "draggablesticker",
+      "displayName": "Draggable Sticker",
+      "category": "interactive-elements",
+      "description": "Drag an image around like a real sticker that peels off the surface, tilts to your motion, and settles back into place.",
+      "tags": [
+        "image",
+        "sticker",
+        "webgl",
+        "drag",
+        "peel",
+        "tilt",
+        "3d",
+        "shader"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "starburst",
+      "displayName": "Star Burst",
+      "category": "animation",
+      "description": "Radiate glowing streaks outward from a movable focal point to form a twinkling starburst with a soft flower bloom at its core.",
+      "tags": [
+        "canvas",
+        "particles",
+        "animation",
+        "glow",
+        "radial",
+        "starburst",
+        "twinkle",
+        "light"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "imagegallery",
+      "displayName": "Image Gallery",
+      "category": "image-gallery",
+      "description": "Continuously stream images that fly outward or spiral from the center, with configurable density, easing, and timing.",
+      "tags": [
+        "image",
+        "gallery",
+        "spiral",
+        "radial",
+        "animation",
+        "gsap",
+        "collage"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "meshtexthover",
+      "displayName": "Mesh Text Hover",
+      "category": "text",
+      "description": "Warp text across a WebGL mesh that drags and springs back under the cursor, with chromatic color-split fringes that cycle through your palette.",
+      "tags": [
+        "text",
+        "webgl",
+        "mesh",
+        "hover",
+        "distortion",
+        "chromatic",
+        "physics",
+        "animation"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "character-waves",
+      "displayName": "Character Waves",
+      "category": "background-animation",
+      "description": "Fill any background with a flowing field of ASCII characters driven by layered noise waves that ripple away from the cursor.",
+      "tags": [
+        "ascii",
+        "canvas",
+        "background",
+        "noise",
+        "waves",
+        "animation",
+        "cursor",
+        "monospace"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "gravitygallery",
+      "displayName": "Gravity Gallery",
+      "category": "interactive-elements",
+      "description": "Drop image-filled squares or circles into a Matter.js physics world with gravity, walls, and click-drag tossing.",
+      "tags": [
+        "image",
+        "physics",
+        "gallery",
+        "drag",
+        "gravity",
+        "collision",
+        "interactive",
+        "animation"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "blurcarousel",
+      "displayName": "Blur Carousel",
+      "category": "image-gallery",
+      "description": "Flip through images with a soft blur that creeps in on arrow hover and a 3D press-tilt that springs back as each slide advances.",
+      "tags": [
+        "image",
+        "carousel",
+        "blur",
+        "3d",
+        "tilt",
+        "hover",
+        "autoplay",
+        "gallery"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "dynamic-weight",
+      "displayName": "Dynamic Weight",
+      "category": "text",
+      "description": "Morph each letter between two font weights based on its distance from the cursor for a live, variable-font hover effect.",
+      "tags": [
+        "text",
+        "typography",
+        "variable font",
+        "cursor",
+        "proximity",
+        "hover",
+        "animation",
+        "interactive"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ]
+    },
+    {
+      "name": "flickertext",
+      "displayName": "Flicker Text",
+      "category": "text",
+      "description": "Bring text and images to life with customizable flicker and outline effects.",
+      "tags": [
+        "text animation",
+        "flicker effect",
+        "outline text",
+        "hover animation",
+        "reveal animation",
+        "typography"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "link-preview",
+      "displayName": "Link Preview",
+      "category": "button",
+      "description": "Reveal a floating thumbnail of any linked page on hover, with the preview leaning toward your cursor as it moves.",
+      "tags": [
+        "text",
+        "link",
+        "hover",
+        "preview",
+        "image",
+        "animation",
+        "spring",
+        "cursor"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ]
+    },
+    {
+      "name": "magneticcarousel",
+      "displayName": "Magnetic Carousel",
+      "category": "image-gallery",
+      "description": "Magnify a row of image bars macOS dock style as the cursor nears, then click any bar to expand it into a large square.",
+      "tags": [
+        "image",
+        "gallery",
+        "carousel",
+        "dock",
+        "magnify",
+        "hover",
+        "animation"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "particletunnel",
+      "displayName": "Particle Tunnel",
+      "category": "animation",
+      "description": "Flow particles along radial spokes toward a central black void with perspective depth, depth-based fading, and z-sorted overlap.",
+      "tags": [
+        "canvas",
+        "3d",
+        "particles",
+        "tunnel",
+        "perspective",
+        "animation",
+        "depth"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "shiny-pill",
+      "displayName": "Shiny Pill",
+      "category": "text",
+      "description": "Sweep a bright sheen across a line of text on an endless loop, with tunable shine color and sweep speed.",
+      "tags": [
+        "text",
+        "shine",
+        "gradient",
+        "mask",
+        "css",
+        "animation",
+        "loop",
+        "sheen"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "pixelate-image",
+      "displayName": "Pixelate Image",
+      "category": "interactive-elements",
+      "description": "Reveal or conceal an image through a real-time SVG pixelation filter driven by cursor distance or a scroll-triggered tween.",
+      "tags": [
+        "image",
+        "svg",
+        "pixelate",
+        "hover",
+        "scroll",
+        "filter",
+        "reveal",
+        "animation"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ]
+    },
+    {
+      "name": "proximityorbit",
+      "displayName": "Proximity Orbit",
+      "category": "image-gallery",
+      "description": "Display images in a smooth, interactive circular orbit.",
+      "tags": [
+        "orbit gallery",
+        "circular gallery",
+        "image animation",
+        "orbit effect",
+        "motion",
+        "hover effect",
+        "interactive gallery",
+        "image carousel",
+        "circular layout"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ]
+    },
+    {
+      "name": "textpath",
+      "displayName": "Text Path",
+      "category": "text",
+      "description": "Scroll repeating text seamlessly along a procedural sine-wave path with adjustable frequency, height, speed, and direction.",
+      "tags": [
+        "text",
+        "svg",
+        "marquee",
+        "wave",
+        "animation",
+        "scrolling",
+        "typography"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "textlift",
+      "displayName": "Text Lift",
+      "category": "text",
+      "description": "Stack each letter into a layered 3D extrusion that expands and lifts off the surface when you hover it individually.",
+      "tags": [
+        "text",
+        "hover",
+        "3d",
+        "extrusion",
+        "typography",
+        "animation",
+        "spring"
+      ],
+      "variants": [
+        "framer"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ]
+    }
+  ]
+}
