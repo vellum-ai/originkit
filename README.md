@@ -41,6 +41,50 @@ Ask your assistant: "Set up my Originkit API key"
 - Daily limit: 10 component fetches per key, resets at midnight UTC
 - Use `originkit_setup` with action `"reset"` to clear the stored key
 
+## How to use
+
+### Browse components
+
+Browse without a key. Ask your assistant:
+
+> "Browse Originkit components"
+> "Search Originkit for particle effects"
+> "Show me Originkit's text animation components"
+
+You can also filter by category: `interactive-elements`, `image-gallery`, `text`, `animation`, `background-animation`, `button`.
+
+### Fetch a component
+
+Once you find one you like, ask your assistant to fetch it:
+
+> "Get the smokytext component from Originkit"
+> "Fetch the blackhole component for Vite with Tailwind"
+
+Specify your stack (`react`, `nextjs`, `vite`, `framer`), styling (`css`, `tailwind`, `cssmodules`), and TypeScript preference. Defaults are React + CSS + TypeScript.
+
+If you have not set up an API key yet, you will be prompted to enter one. The key is saved automatically for future fetches.
+
+### Set up your API key
+
+Get a free key from [originkit.dev](https://originkit.dev):
+
+1. Create an account or log in
+2. Go to **Settings > API Integration**
+3. Copy your API key (it looks like `cmp_live_...`)
+
+Then ask your assistant:
+
+> "Set up my Originkit API key"
+
+### Manage your key
+
+> "Check my Originkit API key status"
+> "Reset my Originkit API key"
+
+### Daily limit
+
+Each API key allows 10 component fetches per day, shared with website copies. The limit resets at midnight UTC. Browsing the catalog is unlimited and does not count against the fetch limit.
+
 ## Tools
 
 | Tool | Purpose | API key |
