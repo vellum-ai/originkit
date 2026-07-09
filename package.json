@@ -1,0 +1,10 @@
+{
+  "name": "originkit",
+  "version": "0.1.0",
+  "description": "Browse and import animated components from Originkit's library of 50 free animated components via MCP.",
+  "type": "module",
+  "peerDependencies": {
+    "@vellumai/plugin-api": "^0.10.0"
+  },
+  "vellum": {}
+}
