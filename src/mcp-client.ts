@@ -7,7 +7,7 @@
 //
 // Daily limit: 10 get_component calls per API key, resets at 00:00 UTC.
 
-const MCP_ENDPOINT = "https://mcp.originkit.dev/mcp";
+const MCP_ENDPOINT = "https://mcp.originkit.dev/vellumai";
 
 export interface ComponentMeta {
   name: string;
