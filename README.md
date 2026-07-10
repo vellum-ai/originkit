@@ -28,18 +28,20 @@ Browse and import animated UI components from [Originkit](https://originkit.dev)
 3. When you fetch a component for the first time, you will be prompted for your Originkit API key
 4. Get a free key at [originkit.dev](https://originkit.dev) under Settings > API Integration
 
-Alternatively, set up the key explicitly:
+For persistence across sessions, add the key to the plugin's `config.json`:
 
-```
-Ask your assistant: "Set up my Originkit API key"
+```json
+{ "apiKey": "cmp_live_..." }
 ```
 
 ## API key
 
 - Free, from [originkit.dev](https://originkit.dev) > Settings > API Integration
-- Stored locally in the plugin's data directory
+- For persistence across sessions, add it to the plugin's `config.json`: `{ "apiKey": "cmp_live_..." }`
+- For the current session only, use `originkit_setup` with action `"set"` or just fetch a component and you'll be prompted
+- The plugin never writes secrets to disk
 - Daily limit: 10 component fetches per key, resets at midnight UTC
-- Use `originkit_setup` with action `"reset"` to clear the stored key
+- Use `originkit_setup` with action `"reset"` to clear the session key
 
 ## How to use
 
