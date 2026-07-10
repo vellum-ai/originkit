@@ -37,7 +37,11 @@ To get a free API key:
 3. Open **Settings > API Integration**
 4. Copy your API key (it looks like `cmp_live_...`)
 
-Then call `originkit_setup` with action `"set"` to store the key, or simply call `originkit_get` for any component and the user will be prompted automatically.
+Then either:
+- Call `originkit_setup` with action `"set"` to enter it for the current session, or
+- Add it to the plugin's `config.json` for persistence: `{ "apiKey": "cmp_live_..." }`
+
+You can also just call `originkit_get` for any component and the user will be prompted automatically.
 
 **Daily limit:** 10 component fetches per API key per day, resets at midnight UTC. This limit is shared between MCP and website copies.
 
