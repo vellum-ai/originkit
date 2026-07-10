@@ -1,9 +1,13 @@
 // tools/originkit_setup.ts — check, set, or reset the Originkit API key.
-// Guides the user through getting a key from originkit.dev and stores it
-// securely in the plugin's data directory.
+// Guides the user through getting a key from originkit.dev.
+//
+// Key storage:
+//   - config.json: user adds it manually for persistence across sessions
+//   - In-memory session cache: set via requestSecret, lasts for the session only
+// The plugin never writes secrets to disk.
 
 import type { ToolContext, ToolExecutionResult } from "@vellumai/plugin-api";
-import { getApiKey, saveApiKey, clearApiKey } from "../src/storage.ts";
+import { getApiKey, setSessionKey, clearSessionKey } from "../src/storage.ts";
 
 export default {
   description:
@@ -20,7 +24,7 @@ export default {
         type: "string",
         description:
           "What to do: 'status' checks if a key is set, 'set' prompts for a new key, " +
-          "'reset' clears the stored key.",
+          "'reset' clears the session key.",
         enum: ["status", "set", "reset"],
         default: "status",
       },
@@ -35,7 +39,6 @@ export default {
     if (action === "status") {
       const key = getApiKey();
       if (key) {
-        // show masked version
         const masked =
           key.length > 12
             ? key.slice(0, 8) + "••••" + key.slice(-4)
@@ -45,7 +48,7 @@ export default {
             `Originkit API key is configured (${masked}).\n` +
             `You can browse components with \`originkit_browse\` and fetch code with \`originkit_get\`.\n` +
             `Daily limit: 10 fetches per key, resets at midnight UTC.\n` +
-            `Use \`originkit_setup\` with action "reset" to clear the key.`,
+            `Use \`originkit_setup\` with action "reset" to clear the session key.`,
           isError: false,
         };
       }
@@ -57,17 +60,20 @@ export default {
           `2. Create an account or log in\n` +
           `3. Open Settings > API Integration\n` +
           `4. Copy your API key (it looks like cmp_live_...)\n\n` +
-          `Then use \`originkit_setup\` with action "set" to store it.\n` +
+          `Then use \`originkit_setup\` with action "set" to enter it for this session, ` +
+          `or add it to the plugin's config.json for persistence:\n` +
+          `  { "apiKey": "cmp_live_..." }\n\n` +
           `You can browse components without a key using \`originkit_browse\`.`,
         isError: false,
       };
     }
 
     if (action === "reset") {
-      clearApiKey();
+      clearSessionKey();
       return {
         content:
-          "Originkit API key has been cleared. Use `originkit_setup` with action \"set\" to store a new one.",
+          "Session API key cleared. If your key is in config.json, remove it there too. " +
+          "Use `originkit_setup` with action \"set\" to enter a new key for this session.",
         isError: false,
       };
     }
@@ -77,8 +83,9 @@ export default {
         return {
           content:
             "Secure key entry is not available in this context.\n" +
-            "Get a free key at https://originkit.dev > Settings > API Integration, " +
-            "then try again from an interactive session.",
+            "Get a free key at https://originkit.dev > Settings > API Integration.\n" +
+            "Then add it to the plugin's config.json:\n" +
+            '  { "apiKey": "cmp_live_..." }',
           isError: true,
         };
       }
@@ -96,16 +103,19 @@ export default {
             isError: false,
           };
         }
-        saveApiKey(result.value);
+        setSessionKey(result.value);
         return {
           content:
-            "Originkit API key saved. You can now fetch component source code with `originkit_get`.\n" +
+            "Originkit API key saved for this session. You can now fetch component " +
+            "source code with `originkit_get`.\n\n" +
+            "For persistence across sessions, add it to the plugin's config.json:\n" +
+            '  { "apiKey": "cmp_live_..." }\n\n' +
             "Daily limit: 10 fetches per key, resets at midnight UTC.",
           isError: false,
         };
       } catch (e) {
         return {
-          content: `Failed to save API key: ${(e as Error).message}`,
+          content: `Failed to prompt for API key: ${(e as Error).message}`,
           isError: true,
         };
       }
