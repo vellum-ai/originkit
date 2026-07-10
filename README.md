@@ -95,7 +95,7 @@ Each API key allows 10 component fetches per day, shared with website copies. Th
 
 ## How it works
 
-The plugin talks to Originkit's MCP server (`https://mcp.originkit.dev/mcp`) using JSON-RPC 2.0 with bearer token auth. The component catalog (metadata only, no source code) is bundled with the plugin so browsing is instant and key-free. Source code is fetched on demand from the MCP server.
+The plugin talks to Originkit's MCP server (`https://mcp.originkit.dev/vellumai`) using JSON-RPC 2.0 with bearer token auth. The component catalog (metadata only, no source code) is bundled with the plugin so browsing is instant and key-free. Source code is fetched on demand from the MCP server.
 
 ## Credit
 
