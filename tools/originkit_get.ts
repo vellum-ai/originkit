@@ -1,10 +1,14 @@
 // tools/originkit_get.ts — fetch a single component's source code from Originkit.
 // Requires an API key. Calls the Originkit MCP server via JSON-RPC 2.0.
 // Daily limit: 10 fetches per key, resets at 00:00 UTC.
+//
+// The key is resolved from config.json (user-edited) or an in-memory session
+// cache. If neither has a key, the user is prompted via requestSecret and the
+// result is cached for the session only. The plugin never writes secrets to disk.
 
 import type { ToolContext, ToolExecutionResult } from "@vellumai/plugin-api";
 import { getComponent } from "../src/mcp-client.ts";
-import { getApiKey, saveApiKey } from "../src/storage.ts";
+import { getApiKey, setSessionKey } from "../src/storage.ts";
 
 export default {
   description:
@@ -56,17 +60,18 @@ export default {
     const styling = (input.styling as "css" | "tailwind" | "cssmodules") ?? "css";
     const typescript = input.typescript !== false;
 
-    // Resolve the API key
+    // Resolve the API key from config or session cache
     let apiKey = getApiKey();
 
     if (!apiKey) {
-      // Prompt the user for their key via the native secure field UI
       if (!ctx.requestSecret) {
         return {
           content:
-            "No Originkit API key is configured and secure prompting is not available.\n" +
-            "Get a free key at https://originkit.dev under Settings > API Integration, " +
-            "then use `originkit_setup` to store it.",
+            "No Originkit API key is configured.\n\n" +
+            "To set one up, add it to the plugin's config.json:\n" +
+            '  { "apiKey": "cmp_live_..." }\n\n' +
+            "Or get a free key at https://originkit.dev under Settings > API Integration, " +
+            "then use `originkit_setup` to enter it interactively.",
           isError: true,
         };
       }
@@ -87,7 +92,7 @@ export default {
           };
         }
         apiKey = result.value;
-        saveApiKey(apiKey);
+        setSessionKey(apiKey);
       } catch (e) {
         return {
           content: `Failed to prompt for API key: ${(e as Error).message}`,
@@ -123,13 +128,12 @@ export default {
       return { content: header + result.content, isError: false };
     } catch (e) {
       const msg = (e as Error).message;
-      // If the key might be invalid, hint at re-setup
       if (msg.includes("401") || msg.includes("unauthorized")) {
         return {
           content:
             `Authentication failed. Your API key may be invalid or expired. ` +
             `Get a fresh key at https://originkit.dev > Settings > API Integration ` +
-            `and use \`originkit_setup\` to update it.`,
+            `and update it in the plugin's config.json or via \`originkit_setup\`.`,
           isError: true,
         };
       }
