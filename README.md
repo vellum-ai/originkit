@@ -4,7 +4,7 @@ Browse and import animated UI components from [Originkit](https://originkit.dev)
 
 ## What it does
 
-- **Browse** the full Originkit library (50 components) by name, category, or search term. No API key required.
+- **Browse** the full Originkit library (+250 components) by name, category, or search term. No API key required.
 - **Fetch** any component's source code in your preferred stack (React, Next.js, Vite, Framer) and styling (CSS, Tailwind, CSS Modules). Requires a free API key.
 - **Setup guide** that walks users through getting an Originkit API key and stores it securely.
 
