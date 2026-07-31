@@ -1,6 +1,6 @@
 # Originkit Plugin
 
-Browse and import animated UI components from [Originkit](https://originkit.dev), a free library of 50 animated components for modern websites.
+Browse and import animated UI components from [Originkit](https://originkit.dev), a free library of over 250 animated components for modern websites.
 
 ## What it does
 
